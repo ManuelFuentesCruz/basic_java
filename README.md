@@ -1,6 +1,4 @@
-
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 # Basic_Java
 
@@ -30,7 +28,6 @@ Ideal for study and showcasing Java development skills.
   9. **Prints numbers from 1 up to a specified number** in right-aligned columns as requested by the user.
   10. **Linear System Solver (2x2 equations)** – Solves a system of two linear equations with two unknowns using `Cramer's` rule and indicates if the system is solvable.
 
-
 ## 🧠 Author
 **Manuel Fuentes Cruz**  
 
@@ -40,14 +37,3 @@ Ideal for study and showcasing Java development skills.
   git clone https://github.com/LyPAW/Basic_Java.git
   cd Basic_Java/TreeDrawing
   java TreeDrawing.java
-```
-
-
-
-Copyright © 2025 Manu Fuentes
-
-This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).
-You may share the material with attribution, but you may not use it commercially or create derivatives.
-
-Full license text: https://creativecommons.org/licenses/by-nc-nd/4.0/
-
