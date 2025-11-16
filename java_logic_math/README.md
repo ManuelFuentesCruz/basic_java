@@ -322,3 +322,126 @@ The output should properly wrap to the next line after reaching the specified nu
 	
 		}
 	}
+	
+## 📌 Exercise 10: Linear System Solver (2x2 Equations) in Java
+**Description:**
+Create a Java program that solves a system of two linear equations with two unknowns of the form:
+
+a*x + b*y = e
+c*x + d*y = f
+
+
+Rules:
+
+A system is solvable if a*d - b*c != 0.
+
+If solvable, the solution is calculated using Cramer's rule:
+
+	x = (e*d - b*f) / (a*d - b*c)
+	y = (a*f - e*c) / (a*d - b*c)
+
+
+Requirements:
+
+Create a class named Equation that contains:
+
+A boolean method that returns true if the system is solvable, false otherwise.
+
+Two methods that return the values of x and y as double.
+
+All methods should take the coefficients (a, b, c, d, e, f) as arguments.
+
+Create a TestEquation class with a main method to test the solver.
+
+The program should prompt the user to enter the coefficients for each equation via console input.
+
+For each system, the program should print whether it is solvable.
+
+If solvable, display the solutions x and y.
+
+Example input/output:
+
+	Case 1 (unsolvable system):
+
+	Enter coefficients for the first equation (a b e): 1 1 1
+	Enter coefficients for the second equation (c d f): 2 2 2
+Output: The system is not solvable.
+
+
+Case 2 (solvable system):
+
+	Enter coefficients for the first equation (a b e): 2 1 7
+	Enter coefficients for the second equation (c d f): -1 2 -1
+	Output: The system is solvable.
+Solution:
+x = 3
+y = 1
+
+	 import java.util.Scanner;
+
+
+	public class ecuacion{
+	
+	
+	
+	public static boolean verificar(int a1,int b1,int c1,int d1){
+		
+		if ((a1 * d1) - (b1 * c1) != 0){
+		return true;
+		}	
+		
+		else{
+		return false;
+		}
+		
+		
+	}
+	
+	public static float calculox(int a1,int b1,int c1,int d1, int e1,int f1){
+		float x;
+		x = ((e1 * d1) - (b1 * f1)) / ((a1 * d1) - (b1 * c1));
+		return x;
+	}
+	
+	public static float calculoy(int a1,int b1,int c1,int d1, int e1,int f1){
+		float y;
+		y = ((a1 * f1) - (e1 * c1)) / ((a1 * d1) - (b1 * c1));
+		return y;
+	}
+	
+	
+	public static void main(String[]args){
+	int a,b,c,d,e,f;
+	boolean resultado;
+	float resultadox,resultadoy;
+	
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Segun la formula de verificacion de ecuaciones a *d - b  *c != 0 dime el valor de las distintas variables");
+	System.out.print("Dime el valor de a ");
+	a = sc.nextInt();
+	System.out.print("Dime el valor de b ");
+	b = sc.nextInt();
+	System.out.print("Dime el valor de e ");
+	e = sc.nextInt();
+	System.out.print("Dime el valor de c ");
+	c = sc.nextInt();
+	System.out.print("Dime el valor de d ");
+	d = sc.nextInt();
+	System.out.print("Dime el valor de f ");
+	f = sc.nextInt();
+	
+	
+	resultado = verificar(a,b,c,d);
+	resultadox = calculox(a,b,c,d,e,f);
+	resultadoy = calculoy(a,b,c,d,e,f);
+	
+	if (resultado == true){ //== , si usamos = le estamos dando el valor a resultado de true todo el rato;
+		System.out.println("La ecuacion tiene solucion");
+		System.out.println("El resultado de x es " + resultadox);
+		System.out.println("El resultado de y es " + resultadoy);
+	} else{
+		System.out.println("La ecuacion no tiene solucion");
+	}
+	
+	}
+	}
