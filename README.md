@@ -28,6 +28,8 @@ Ideal for study and showcasing Java development skills.
   7. **Command-Line Greeting** – Prints `"Hello FirstName LastName"` using command-line arguments.
   8. **Integer Operations Menu** – Prompts for two integers `(1–10)` and shows a menu to add, subtract, multiply, or divide repeatedly until exit.
   9. **Prints numbers from 1 up to a specified number** in right-aligned columns as requested by the user.
+  10. **Linear System Solver (2x2 equations)** – Solves a system of two linear equations with two unknowns using `Cramer's` rule and indicates if the system is solvable.
+
 
 ## 🧠 Author
 **Manuel Fuentes Cruz**  
