@@ -20,7 +20,7 @@ These exercises are ideal for practicing logic, control flow, and arithmetic in 
 8.
 9.
 10.
-
+ ```java
     	int a = 1;
 		
 		System.out.println("RESULT1:");
@@ -29,7 +29,7 @@ These exercises are ideal for practicing logic, control flow, and arithmetic in 
 			a ++;
 		} 
 		while( a <= 10);
-
+```
 
 
 
@@ -44,7 +44,7 @@ These exercises are ideal for practicing logic, control flow, and arithmetic in 
 35.
 ...
 80.
-
+```java
     	int b = 20;
 		
 		System.out.println("RESULT2:");	
@@ -52,7 +52,7 @@ These exercises are ideal for practicing logic, control flow, and arithmetic in 
 		System.out.print(b + ". " );	
 		b += 5;		
 		}
-
+```
 ## 📌 Exercise 3: Series 100, 98, 96 … 50 (`for loop`)
 
 **Description:** Print the decreasing series from 100 to 50, decrementing by 2, using a for loop.
@@ -64,21 +64,21 @@ These exercises are ideal for practicing logic, control flow, and arithmetic in 
 94.
 ...
 50.
-
+```java
     	int c;
 
 		System.out.println("RESULT3:");
 		for ( c = 100; c >= 50; c -= 2){
 			System.out.print( c + ". " );
 		}
-
+```
 ## 📌 Exercise 4: Multiplication from 1 to N (`do-while loop`)
 
 **Description:** Generate a random integer N between 1 and 10, and calculate the product of all integers from 1 to N.
 
 **Example output:**
 1 x 2 x 3 = 6
-
+```java
     	int aleatorio;
 		aleatorio = s.nextInt(10);
 		int d = 1;
@@ -92,14 +92,14 @@ These exercises are ideal for practicing logic, control flow, and arithmetic in 
 		while ( bucle <= aleatorio);
 		
 		System.out.print(d + ". \n");
-
+```
 ## 📌 Exercise 5: Sum of squares of first N natural numbers (`while loop`)
 
 **Description:** Using the same N from the previous exercise, calculate the sum of squares from 1 to N.
 
 **Example output:**
 1^2 + 2^2 + 3^2 = 14
-
+```java
    		int e = 0;
 		int f = 1;
 		
@@ -109,7 +109,7 @@ These exercises are ideal for practicing logic, control flow, and arithmetic in 
 		f ++;
 		}
 		System.out.println(e + ". \n");
-
+```
 ## 📌 Exercise 6: Sum of even and odd numbers from 1 to N (`for loop`)
 
 **Description:** Using the same N, calculate separately the sum of even and odd numbers from 1 to N.
@@ -119,7 +119,7 @@ These exercises are ideal for practicing logic, control flow, and arithmetic in 
 Sum of even numbers from 0 to N = X.
 
 Sum of odd numbers from 0 to N = X.
-
+```java
     	aleatorio = s.nextInt(10);
 		int g = 0;
 		int h = 0;
@@ -137,7 +137,7 @@ Sum of odd numbers from 0 to N = X.
 		System.out.println("EL RESULTADO DEL EJERCICIO6:");
 		System.out.println("Sum of even numbers from 0 to N :" + h + ".");
 		System.out.println("Sum of odd numbers from 0 to N :" + i + ".");
-
+```
 ## 📌 Exercise 7: Command-Line Greeting Program in Java  
 
 **Description:** This Java program takes a first name and last name as command-line arguments and prints a greeting message including double quotes. 
@@ -146,7 +146,7 @@ Sum of odd numbers from 0 to N = X.
 java args.java John Doe
 "John"
 "Doe"
-
+```java
 
 	public class doble{
 		public static void main(String []args){
@@ -158,7 +158,7 @@ java args.java John Doe
 		}
 	}
 
-
+```
 ## 📌 Exercise 8: Integer Calculator with Menu Using Scanner in Java  
 
 **Description:** Read the official Java documentation and learn how to read integer numbers from standard input using the Scanner class. Based on this, create a program that:
@@ -194,7 +194,7 @@ Each operation (options 1-4) should display the result in the console. Example f
 All operations are performed with integer numbers.
 
 When the user selects option 5, the program should display a message indicating that it has ended.
-
+```java
 	import java.util.Scanner;
 
 	public class calc{
@@ -243,9 +243,9 @@ When the user selects option 5, the program should display a message indicating 
 		
 		}
 	}
-	
+```	
 ## Alternative using static methods
-
+```java
 	import java.util.Scanner;
 	import java.util.Random;
 
@@ -296,7 +296,7 @@ When the user selects option 5, the program should display a message indicating 
 	}
 
 
-
+```
 ## 📌 Exercise 9: Number Grid Printer in Java  
 
 **Description:** Create a Java program that asks the user for a number and the number of columns, then prints the numbers from 1 up to the entered number, formatted into the specified number of columns with right-aligned numbers.
@@ -339,7 +339,7 @@ It should print all numbers from 1 to the entered number.
 Numbers must be right-aligned in each column.
 
 The output should properly wrap to the next line after reaching the specified number of columns.
-
+```java
 	import java.util.Scanner;
 
 
@@ -375,7 +375,7 @@ The output should properly wrap to the next line after reaching the specified nu
 	
 		}
 	}
-	
+```	
 ## 📌 Exercise 10: Linear System Solver (2x2 Equations) in Java
 **Description:**
 Create a Java program that solves a system of two linear equations with two unknowns of the form:
@@ -429,7 +429,7 @@ Case 2 (solvable system):
 Solution:
 x = 3
 y = 1
-
+```java
 	 import java.util.Scanner;
 
 
@@ -498,3 +498,4 @@ y = 1
 	
 	}
 	}
+```
